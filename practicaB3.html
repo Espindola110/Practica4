@@ -14,41 +14,40 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-primary" role="navigation">
+        <div class="container">
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <a class="navbar-brand text-white" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" role="navigation">
+                <ul class="navbar-nav  ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" role="navigation">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <div class="row ">
@@ -92,17 +91,23 @@
         </div>
         <div class="container">
             <div class="row">
+                <div class="text-center p-5 col-12">
+                    <h2 class="">Lorem, ipsum dolor..</h2>
+                    <p class="lead text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate facere
+                        eum, rerum doloribus asperiores sed libero quis distinctio optio aliquid.</p>
+                </div>
                 <div class="col-12 col-md-4 col-sm-12 p-2 ">
-                    <div class="card" style="width: 18rem;">
+                    <div class="card" style="width: 18rem; ">
                         <img src="images/slide1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="btn btn-info">Go somewhere</a>
                         </div>
                     </div>
                 </div>
+
                 <div class="col-12 col-md-4 col-sm-12 p-2 ">
                     <div class="card" style="width: 18rem;">
                         <img src="images/slide2.jpg" class="card-img-top" alt="...">
@@ -110,7 +115,7 @@
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="btn btn-info">Go somewhere</a>
                         </div>
                     </div>
                 </div>
@@ -121,17 +126,71 @@
                             <h5 class="card-title">Card title</h5>
                             <p class="card-text">Some quick example text to build on the card title and make up the bulk
                                 of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <a href="#" class="btn btn-info">Go somewhere</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+            featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+        <div class="container">
+            <div class="text-center p-5 col-12">
+                <h2 class="">Lorem, ipsum dolor..</h2>
+                <p class="lead text-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis saepe
+                    perferendis ipsam voluptate ipsum eaque unde perspiciatis consequatur, necessitatibus nobis
+                    suscipit laborum quo quibusdam sint odit! Deleniti repudiandae odit culpa!</p>
+                    <div class="row">
+                        <div class="card col-6" style="width: 18rem; ">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item bg-info"  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Cras justo odio</li>
+                                    <div class="collapse show" id="collapseExample">
+                                            <div class="card card-body text-justify">
+                                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, similique. Adipisci, quos. Commodi, deserunt expedita illum sint provident ipsam eveniet officia nulla hic praesentium quod adipisci cumque libero tempore modi eos accusantium corrupti! Libero, architecto. Sunt magnam, veritatis quaerat possimus quibusdam temporibus inventore perferendis similique exercitationem quod consectetur nisi veniam.
+                                            </div>
+                                          </div>
+                                    <li class="list-group-item bg-info"  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Dapibus ac facilisis in</li>
+                                    <div class="collapse" id="collapseExample">
+                                            <div class="card card-body text-justify">
+                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                            </div>
+                                          </div>
+                                    <li class="list-group-item bg-info"  data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Vestibulum at eros</li>
+                                    <div class="collapse" id="collapseExample">
+                                            <div class="card card-body text-justify">
+                                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                            </div>
+                                          </div>
+                                </ul>
+                            </div>
+                            <div class="card col-6" style="width: 18rem; ">
+                                    <img src="images/slide1.jpg" class="card-img-top" alt="...">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item bg-info" >Cras justo odio</li>
+                                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                                        <li class="list-group-item">Vestibulum at eros</li>
+                                        <li class="list-group-item">oh, you're aprocching me</li>
+                                        <li class="list-group-item">Jotaro!!! DIO!!!</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
     <div class="col-12 bg-dark aling-middle p-2">
         <p class="text-center text-white lead ">Derechos Reservados</p>
     </div>
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -145,5 +204,4 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
