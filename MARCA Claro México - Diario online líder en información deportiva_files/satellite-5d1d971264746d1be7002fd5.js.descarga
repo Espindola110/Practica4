@@ -1,0 +1,14 @@
+function ConfiguraVideosMX(s) {
+    if (s_omniture.channel != 'claro-mx') {
+        s_omniture.prop5 = s_omniture.prop4;
+        s_omniture.prop4 = s_omniture.prop3;
+        s_omniture.prop3 = s_omniture.prop2;
+        s_omniture.prop2 = s_omniture.prop1;
+        s_omniture.prop1 = s_omniture.channel;
+        s_omniture.channel = 'claro-mx';
+	}
+	
+    if ("undefined" != typeof s_omniture && "undefined" != typeof s_omniture.prop11 && s_omniture.prop11 != "") {
+        s_omniture.prop11 = s_omniture.prop11.replace(/-/g,' ');
+    }
+}

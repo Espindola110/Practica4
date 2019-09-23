@@ -1,0 +1,57 @@
+var started = new Array();
+
+function onVideoEnd(event) {
+    setHTML5VideoData(event.target, "video end");
+    started.pop(event.target.src);
+}
+
+function onVideoPlay(event) {
+    if (started.indexOf(event.target.src) < 0) {
+        setHTML5VideoData(event.target, "video start");
+        started.push(event.target.src)
+    };
+}
+
+var players = document.querySelectorAll('video');
+
+players.forEach(function (element, i) {
+    element.addEventListener('play', onVideoPlay);
+    element.addEventListener('ended', onVideoEnd);
+});
+
+//Establece las variables y envia datos
+window.setHTML5VideoData = function (player, evento) {
+        try {
+            s.prop29 = s.eVar29 = s.prop23 = s.eVar23 = "etiquetas o tags del video - html5",
+            s.eVar24 = (typeof(pp) != 'undefined')?"Player - Ooyala":"Player - HTML5",
+            s.prop24 = s.eVar24,
+            s.prop10 = s.eVar10 = (typeof(pp) != 'undefined')?"id del video - ooyala":"id del video - html5",
+            s.prop11 = s.eVar11 = s.eVar20 = (typeof(pp) != 'undefined' && typeof(pp.getTitle) == 'function')?(anaUtils && anaUtils.sc_quitatildes(pp.getTitle()).toLowerCase()):s.prop11,
+            s.prop20 = s.eVar20,
+            s.eVar40 = "vod",
+            s.prop40 = s.eVar40,
+            s.eVar21 = s.prop7,
+            s.prop21 = s.eVar21,
+            s.eVar41 = document.URL || "url de la pagina - html5",
+            s.prop41 = s.eVar41,
+            s.eVar65 = s.channel || "seccion donde esta ubicado el video - html5",
+            s.prop65 = s.eVar65,
+            s.eVar68 = s.prop1 || "subseccion donde esta ubicado el video - html5",
+            s.prop68 = s.eVar68,
+            "consumo 25" == evento && (s.events = "event44",
+            s.tl(this, "o", "video 25%")),
+            "consumo 50" == evento && (s.events = "event45",
+            s.tl(this, "o", "video 50%")),
+            "consumo 75" == evento && (s.events = "event46",
+            s.tl(this, "o", "video 75%")),
+            "video start" != evento && "ad start" != evento || (s.events = "event40",
+            s.tl(this, "o", "video play")),
+            "video end" == evento && (s.events = "event41,event36=" + player.duration,
+            s.tl(this, "o", "video stop")),
+            s.events = ""
+        } catch (e) {
+            s.eVar69 = e.message,
+            s.events = "event119",
+            s.tl(this, "o", "ERROR VIDEO")
+        }
+}
